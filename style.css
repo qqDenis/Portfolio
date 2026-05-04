@@ -1,17 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Розміри включають внутрішні відступи */
+    box-sizing: border-box; 
 }
 
 :root {
-    --primary-color: #2563eb;    /* Фірмовий синій */
-    --primary-hover: #1d4ed8;    /* Колір при наведенні */
-    --accent-color: #f59e0b;     /* Акцентний помаранчевий */
-    --text-dark: #1f2937;        /* Основний текст */
-    --text-light: #6b7280;       /* Другорядний текст */
-    --bg-color: #f9fafb;         /* Фон сторінки */
-    --font-main: "Inter", sans-serif; /* Google Fonts */
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --accent-color: #f59e0b;
+    --text-dark: #1f2937;      
+    --text-light: #6b7280;    
+    --bg-color: #f9fafb;    
+    --font-main: "Inter", sans-serif;
 }
 
 body {
