@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Розміри включають внутрішні відступи */
+}
+
+:root {
+    --primary-color: #2563eb;    /* Фірмовий синій */
+    --primary-hover: #1d4ed8;    /* Колір при наведенні */
+    --accent-color: #f59e0b;     /* Акцентний помаранчевий */
+    --text-dark: #1f2937;        /* Основний текст */
+    --text-light: #6b7280;       /* Другорядний текст */
+    --bg-color: #f9fafb;         /* Фон сторінки */
+    --font-main: "Inter", sans-serif; /* Google Fonts */
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease; /* Плавна зміна кольору */
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.8); 
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white !important;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+    cursor: pointer;
+    text-align: center;
+}
+
+.achievement-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.cert-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.gallery-container img {
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.gallery-container img:hover {
+    border-color: var(--primary-color);
+}
+
+footer {
+    padding: 40px 20px;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
