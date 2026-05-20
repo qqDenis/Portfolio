@@ -191,9 +191,9 @@ footer {
 .achievement-card .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2563eb; /* Синій фон */
-    color: white !important;    /* Примусово білий текст */
-    text-decoration: none !important; /* Прибираємо підкреслення */
+    background-color: #2563eb;
+    color: white !important;
+    text-decoration: none !important;
     border-radius: 6px;
     font-weight: 600;
     margin-top: 15px;
@@ -204,5 +204,5 @@ footer {
 }
 
 .achievement-card .btn:hover {
-    background-color: #1d4ed8;  /* Темніший колір при наведенні */
+    background-color: #1d4ed8;
 }
