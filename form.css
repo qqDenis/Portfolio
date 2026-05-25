@@ -1,0 +1,212 @@
+/* ===== FORM PAGE LAYOUT ===== */
+.form-page {
+    max-width: 640px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.form-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #1f2937;
+}
+
+/* ===== CHECKOUT / AUTH FORM ===== */
+.auth-form,
+.checkout-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== FIELDSET ===== */
+fieldset {
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+fieldset legend {
+    font-weight: 700;
+    color: #2563eb;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+}
+
+/* ===== FORM GROUP ===== */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+/* ===== INPUTS, SELECT, TEXTAREA ===== */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, outline 0.2s ease;
+    background-color: #f9fafb;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    background-color: #fff;
+}
+
+/* ===== HTML5 VALIDATION STYLES ===== */
+.form-group input:invalid:focus {
+    border-color: red;
+    outline: none;
+}
+
+.form-group input:valid {
+    border-color: green;
+}
+
+/* Don't highlight empty non-required fields as invalid */
+.form-group input:not(:required):not(:focus) {
+    border-color: #d1d5db;
+}
+
+/* ===== RADIO BUTTONS ===== */
+.form-radio {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-radio input[type="radio"] {
+    accent-color: #2563eb;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.form-radio label {
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: #374151;
+}
+
+/* ===== CHECKBOX ===== */
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.form-checkbox input[type="checkbox"] {
+    accent-color: #2563eb;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    font-size: 0.95rem;
+    color: #374151;
+    cursor: pointer;
+}
+
+.form-checkbox label a {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+    font-family: inherit;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+/* ===== ALT LINK ===== */
+.form-alt-link {
+    text-align: center;
+    margin-top: 1.2rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.form-alt-link a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-alt-link a:hover {
+    text-decoration: underline;
+}
+
+/* ===== FOOTER FORM (newsletter) ===== */
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+footer form label {
+    font-weight: 600;
+    color: #374151;
+}
+
+footer form input[type="email"] {
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 320px;
+    font-family: inherit;
+}
+
+footer form input[type="email"]:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 640px) {
+    .auth-form,
+    .checkout-form {
+        padding: 1.2rem;
+    }
+}
